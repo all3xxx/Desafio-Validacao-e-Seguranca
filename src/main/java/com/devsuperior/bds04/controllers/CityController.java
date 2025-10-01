@@ -18,6 +18,7 @@ public class CityController {
     @Autowired
     private CityService service;
 
+
     @PostMapping
     public ResponseEntity<CityDTO> insert(@Valid @RequestBody CityDTO dto) {
         dto = service.insert(dto);
