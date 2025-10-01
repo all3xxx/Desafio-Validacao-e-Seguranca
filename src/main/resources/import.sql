@@ -15,12 +15,12 @@ INSERT INTO tb_event(name, date, url, city_id) VALUES ('CCXP', '2021-04-13', 'ht
 INSERT INTO tb_event(name, date, url, city_id) VALUES ('Congresso Linux', '2021-05-23', 'https://congressolinux.com.br', 2);
 INSERT INTO tb_event(name, date, url, city_id) VALUES ('Semana Spring React', '2021-05-03', 'https://devsuperior.com.br', 3);
 
-INSERT INTO tb_user(email, password) VALUES ('alex@gmail.com', '$2a$10$tlwXRijegdrd.uq.GQRN2uJq56FAmhFoZuxSWTan60JiTeJUGAjoi');
-INSERT INTO tb_user(email, password) VALUES ('maria@gmail.com', '$2a$10$tlwXRijegdrd.uq.GQRN2uJq56FAmhFoZuxSWTan60JiTeJUGAjoi');
+INSERT INTO tb_user(email, password) VALUES ('ana@gmail.com', '$2a$10$tlwXRijegdrd.uq.GQRN2uJq56FAmhFoZuxSWTan60JiTeJUGAjoi');
+INSERT INTO tb_user(email, password) VALUES ('bob@gmail.com', '$2a$10$tlwXRijegdrd.uq.GQRN2uJq56FAmhFoZuxSWTan60JiTeJUGAjoi');
 
 INSERT INTO tb_role(authority) VALUES ('ROLE_ADMIN');
 INSERT INTO tb_role(authority) VALUES ('ROLE_CLIENT');
 
-INSERT INTO tb_user_role(user_id, role_id) VALUES (1, 1)
-INSERT INTO tb_user_role(user_id, role_id) VALUES (1, 2)
-INSERT INTO tb_user_role(user_id, role_id) VALUES (2, 2)
+INSERT INTO tb_user_role(user_id, role_id) VALUES (1, 2);
+INSERT INTO tb_user_role(user_id, role_id) VALUES (2, 1);
+INSERT INTO tb_user_role(user_id, role_id) VALUES (2, 2);
