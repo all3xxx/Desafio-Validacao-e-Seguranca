@@ -1,6 +1,9 @@
 package com.devsuperior.bds04.dto;
 
 import com.devsuperior.bds04.entities.Event;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -9,9 +12,15 @@ public class EventDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
+
+	@NotBlank(message = "Campo requerido")
 	private String name;
+
+	@FutureOrPresent(message = "A data do evento não pode ser passada")
 	private LocalDate date;
 	private String url;
+
+	@NotNull(message = "Campo requerido")
 	private Long cityId;
 	
 	public EventDTO() {
